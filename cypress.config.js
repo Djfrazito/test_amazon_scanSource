@@ -13,7 +13,7 @@ module.exports = defineConfig({
       return config;
     },
     env: {
-      baseUrl: "https://www.amazon",
+      baseUrl: "https://www.amazon.com.br/",
       loginUser: "scan.teste.2019@gmail.com",
       password: "Scansource2022"
     }
