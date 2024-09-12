@@ -5,10 +5,8 @@
   "main": "index.js",
   "scripts": {
     "open:develop": "npx cypress open --env environment=develop",
-    "run:develop": "npx cypress run --env environment=develop && node report.js",
-    "ci": "npx cypress run --env environment=develop",
-    "allure:report": "allure generate allure-results --clean -o allure-report",
-    "allure:open": "allure open"
+    "run:develop": "npx cypress run",
+    "allure:report": "npx allure serve allure-results "
   },
   "author": "",
   "license": "ISC",

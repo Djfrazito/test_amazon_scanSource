@@ -1,10 +1,8 @@
 import {Given, When, Then} from 'cypress-cucumber-preprocessor/steps'
 import orderPage from '../pages/orderPage';
-import amb from '../../fixtures/environments.json'
-const env = Cypress.env('environment')
 
 Given(/^Faço o login no site "([^"]*)"$/, (url) => {
-    orderPage.siteLogin(amb[env].loginUser, amb[env].password, amb[env].baseUrl)
+    orderPage.siteLogin(Cypress.env('loginUser'), Cypress.env('password'), Cypress.env('baseUrl'))
 });
 
 
@@ -16,7 +14,7 @@ Given(/^adiciono o produto "([^"]*)" ao carrinho$/, (sku) => {
 });
 
 Given(/^acesso o site da amazon$/, () => {
-	orderPage.goVisit(amb[env].baseUrl)
+	orderPage.goVisit(Cypress.env('baseUrl'))
 });
 
 
