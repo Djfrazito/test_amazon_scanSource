@@ -1,6 +1,6 @@
 const { defineConfig } = require("cypress");
 const cucumber = require('cypress-cucumber-preprocessor').default
-
+const { allureCypress } = require ("allure-cypress/reporter")
 
 module.exports = defineConfig({
   viewportHeight: 800,
@@ -9,6 +9,9 @@ module.exports = defineConfig({
     specPattern: "cypress/features/*.feature",
     setupNodeEvents(on, config) {
       on("file:preprocessor",cucumber())
-    },
+      allureCypress(on, config);
+
+      return config;
+    }
   },
 });

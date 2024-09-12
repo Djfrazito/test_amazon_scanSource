@@ -17,6 +17,7 @@
 import './commands'
 require('cypress-xpath');
 import 'cypress-if'
+import "allure-cypress";
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

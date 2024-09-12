@@ -15,6 +15,10 @@ Given(/^adiciono o produto "([^"]*)" ao carrinho$/, (sku) => {
     orderPage.goCart()
 });
 
+Given(/^acesso o site da amazon$/, () => {
+	orderPage.goVisit(amb[env].baseUrl)
+});
+
 
 When(/^fecho o pedido com pagamento via boleto bancário$/, () => {
 	orderPage.confirmAdressClick()
