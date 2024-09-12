@@ -1,0 +1,1 @@
+[{"uid":"15cc6f7bbcda37e3","name":"VIsitar site amazon","time":{"start":1726114211833,"stop":1726114214753,"duration":2920},"status":"passed","severity":"normal"},{"uid":"cf062aa9ac2892c1","name":"Pedido de compra via Boleto bancário","time":{"start":1726114215068,"stop":1726114231383,"duration":16315},"status":"failed","severity":"normal"}]
